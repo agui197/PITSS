@@ -133,7 +133,7 @@ s=np.delete(s,32)
 s=np.delete(s,32)
 s=np.delete(s,19)
 s=np.delete(s,2)
-
+    
 error=list(map(lambda x:np.unique(working_data.loc[working_data.SERIE==x]['LOC'])[0],s))
 
 exceptions=pd.DataFrame(['Otras','Otras','Otras','Otras','Otras','Otras','Otras','Otras','Otras','Otras','Otras','Otras','Otras','Otras','Otras'],index=list(np.unique(error)),columns=['LOC TR'])
